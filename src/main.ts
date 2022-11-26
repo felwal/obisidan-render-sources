@@ -1,8 +1,8 @@
 import { Plugin } from "obsidian";
-import { SamplePluginPluginSettings, DEFAULT_SETTINGS, SampleSettingTab } from "./settings"
+import { RenderSourcesPluginSettings as RenderSourcesPluginSettings, DEFAULT_SETTINGS, RenderSourcesSettingTab } from "./settings"
 
-export default class SamplePluginPlugin extends Plugin {
-  settings: SamplePluginPluginSettings;
+export default class RenderSourcesPlugin extends Plugin {
+  settings: RenderSourcesPluginSettings;
 
   async onload() {
     console.log("loading plugin");
@@ -11,7 +11,7 @@ export default class SamplePluginPlugin extends Plugin {
 		this.loadCommands();
     this.loadRibbon();
 
-    this.addSettingTab(new SampleSettingTab(this.app, this));
+    this.addSettingTab(new RenderSourcesSettingTab(this.app, this));
 
   }
 

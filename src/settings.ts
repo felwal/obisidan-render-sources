@@ -1,18 +1,18 @@
 import { App, PluginSettingTab, Setting } from "obsidian";
-import SamplePluginPlugin from "./main";
+import RenderSourcesPlugin from "./main";
 
-export interface SamplePluginPluginSettings {
+export interface RenderSourcesPluginSettings {
   mySetting: string;
 }
 
-export const DEFAULT_SETTINGS: SamplePluginPluginSettings = {
+export const DEFAULT_SETTINGS: RenderSourcesPluginSettings = {
   mySetting: "default"
 }
 
-export class SampleSettingTab extends PluginSettingTab {
-  plugin: SamplePluginPlugin;
+export class RenderSourcesSettingTab extends PluginSettingTab {
+  plugin: RenderSourcesPlugin;
 
-  constructor(app: App, plugin: SamplePluginPlugin) {
+  constructor(app: App, plugin: RenderSourcesPlugin) {
     super(app, plugin);
     this.plugin = plugin;
   }
@@ -21,6 +21,6 @@ export class SampleSettingTab extends PluginSettingTab {
     const {containerEl} = this;
 
     containerEl.empty();
-    containerEl.createEl("h1", {text: "Sample Plugin"});
+    containerEl.createEl("h1", {text: "Render Sources"});
   }
 }

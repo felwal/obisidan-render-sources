@@ -1,6 +1,6 @@
 {
-	"id": "obsidian-sample-plugin",
-	"name": "Sample Plugin",
+	"id": "obsidian-render-sources",
+	"name": "Render Sources",
 	"version": "0.0.0",
 	"minAppVersion": "0.15.0",
 	"description": "Description",
