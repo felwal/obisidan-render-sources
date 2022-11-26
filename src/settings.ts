@@ -2,11 +2,13 @@ import { App, PluginSettingTab, Setting } from "obsidian";
 import RenderSourcesPlugin from "./main";
 
 export interface RenderSourcesPluginSettings {
-  mySetting: string;
+  italicClass: string;
+  quotationMarkClass: string;
 }
 
 export const DEFAULT_SETTINGS: RenderSourcesPluginSettings = {
-  mySetting: "default"
+  italicClass: "source-work",
+  quotationMarkClass: "source-work-partial"
 }
 
 export class RenderSourcesSettingTab extends PluginSettingTab {
